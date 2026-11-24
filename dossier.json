@@ -1,0 +1,7 @@
+{
+ "entry_txt": "Every TODO is a fortune you wrote for someone else to open.",
+ "chars": 59,
+ "files": {
+  "main.ts": "// Fortune Cookie Wisdom for Developers: writes one fortune, the same bytes on every run.\nimport { mkdirSync, writeFileSync } from \"node:fs\";\n\nconst FORTUNE = \"Every TODO is a fortune you wrote for someone else to open.\";\n\nmkdirSync(\"/output\", { recursive: true });\nwriteFileSync(\"/output/entry.txt\", FORTUNE);\n"
+ }
+}
